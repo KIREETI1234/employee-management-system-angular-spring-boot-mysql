@@ -4,13 +4,15 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
 import { HomeComponent } from './home/home.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 
-  
 
 const routes: Routes = [
-
+  {path: 'user-login', component: UserLoginComponent},
+  {path: 'user-register', component: UserRegisterComponent},
   {path:"show-all-employees",component: EmployeeListComponent},
   {path:"add-employee", component: AddEmployeeComponent},
   {path:'', redirectTo: "home", pathMatch:"full"},

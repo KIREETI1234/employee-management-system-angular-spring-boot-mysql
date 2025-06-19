@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegisterComponent } from './user-register/user-register.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
@@ -13,6 +15,8 @@ const routes: Routes = [
 
   {path:"show-all-employees",component: EmployeeListComponent},
   {path:"add-employee", component: AddEmployeeComponent},
+  { path: 'user-login', component: UserLoginComponent },
+  { path: 'user-register', component: UserRegisterComponent },
   {path:'', redirectTo: "home", pathMatch:"full"},
   {path:'updating-by-id/:id',component:UpdateEmployeeComponent},
   {path:'details-of-employee/:id',component:ShowDetailsComponent},
